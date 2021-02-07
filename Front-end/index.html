@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Text Summarizer</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Abel", sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+.wrapper {
+  width: 212vh;
+  height: 99.5vh;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://wallpapercave.com/wp/wp3517824.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: opacity(80%);
+}
+.Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  text-align: center;
+  position:absolute;
+  top:5%;
+  left:43%;
+}
+.header h1 {
+font-family: 'Kaushan Script', cursive;
+  font-size: 9rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  color: white;
+  padding: 45% 20px 8px;
+}
+.header p {
+  font-family: 'Courgette', cursive;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  color: white;
+  padding: 10px 15px;
+}
+
+main
+{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+}
+
+input[type=text]
+{
+border:0;
+font-size:14pt;
+font-weight:900;
+width:5rem;
+height:5rem;
+cursor:pointer;
+border-radius:50%;
+border:6px solid transparent;
+transition:all 0.1s ease-out;
+background-color:hsl(190deg, 60%, 30%);
+color:transparent;
+font-family: 'Sriracha', cursive;
+}
+
+input[type=text]::placeholder
+{
+color:transparent;
+}
+
+input[type=text]:focus
+{
+background-color:white;
+padding:1rem 1rem;
+border-radius:0.75rem;
+width:22rem;
+height:4rem;
+outline:0;
+border-color:#aaa;
+transition:all 0.2s ease-out;
+color:black;
+}
+
+input[type=text]:focus::placeholder
+{
+color:#ccc;
+}
+
+input[type=text]:focus+button
+{
+opacity:1;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: hsl(190deg, 60%, 30%);
+  border: none;
+  color: white;
+  font-size:14pt;
+  border:1px;
+  padding:1rem 1rem;
+  margin-left:1rem;
+  letter-spacing:1px;
+  border-radius:0.25rem;
+  font-family: 'Sriracha', cursive;
+  color:white;
+  font-weight:900
+  padding: 16px 32px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button
+{
+opacity:0;
+transition:0.2s;
+background-color:hsl(190deg, 60%, 30%);
+border:0;
+border-radius:0.25rem;
+text-transform:uppercase;
+font-family: 'Sriracha', cursive;
+color:white;
+font-weight:900;
+cursor:pointer;
+font-size:14pt;
+padding:1rem 1rem;
+margin-left:1rem;
+letter-spacing:1px;
+}
+
+button:hover
+{
+background-color:black;
+
+}
+    </style>
+</head>
+<body>
+  <main>
+  <div class="wrapper">
+    <div class="Container">
+
+          <div class="header">
+              <h1>Text Summarizer</h1>
+              <p>Click on the circle to enter the link!!!</p>
+              <form name = "passdata" action ="#" method="post">
+                    <input type = "text" placeholder="Type stuff" name="url">
+
+</form>
+
+              </div>
+            </div>
+            </div>
+          </main>
+</body>
+</html>

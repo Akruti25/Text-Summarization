@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Text Summarizer</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+body {
+  width: 118.7vh;
+  height: 150vh;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.pinimg.com/originals/cd/36/ef/cd36ef99d33385a257b0a4bff40d4ceb.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: opacity(80%);
+}
+.header {
+  position:absolute;
+  top:-30%;
+  left:3%;
+}
+.header h1 {
+font-family: 'Kaushan Script', cursive;
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  color: white;
+  padding: 45% 20px 8px;
+}
+.header p {
+  font-family: 'Courgette', cursive;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  color: white;
+  padding: 10px 15px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h1><u>Summarized Text:</u></h1>
+<p>wiki link:{{url}} </p>
+<p>{{sum}}</p>
+</div>
+</body>
+</html>
